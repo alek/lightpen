@@ -1,0 +1,36 @@
+body {
+  /*padding: 50px;*/
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+svg {
+	width: 1000vw;
+	height: 92vh;
+}
+
+.control {
+	margin-left: 5px;
+}
+
+.command {
+	background-color: transparent;
+	border: 0px solid;
+	padding-left: 8px;
+	line-height: 20px;
+	width: 100vw;
+	outline: none;
+}
+
+*:focus {
+    outline: none;
+	background-color: transparent;
+	border: 0px solid;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+	<style type="text/css">
+    text {
+    	font-size: 16px;
+        font-family: Helvetica;
+    }
+	text[role="title"] {
+        font-size: 64px;
+        font-weight: bold;
+        letter-spacing: -3px;
+    }
+	</style>
+	<circle cx="500" cy="500" r="500" stroke="black" fill="black" stroke-width="1"></circle>
+	<circle cx="700" cy="500" r="300" stroke="white" fill="white" stroke-width="0"></circle>
+	<g transform="translate(0,16)">
+	<text x="700" y="500" role="title" >Line</text>
+	<text x="700" y="525" >one, two, three</text>
+	</g>
+</svg>

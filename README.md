@@ -26,3 +26,14 @@ http://localhost:3100/
 
 ## Usage Examples
 
+```console
+loop(20000..1,50) circle $CNT/10 $CNT%1200 ($CNT/17)%23 black white ($CNT/50)%13
+```
+
+```console
+loop(1200..1,30) circle 500 500 $CNT white black 3
+```
+
+```console
+loop(500..1, 17) circle 500 500 $CNT white black $CNT%13
+```

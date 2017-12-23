@@ -22,7 +22,7 @@ SimpleRequest = request:(Command / Shape) {
     return request;
   }
 
-Command = command:(PopCommand / HelpCommand) {
+Command = command:(PopCommand / HelpCommand / BackgroundCmd) {
   return command;
 }
 
@@ -34,6 +34,19 @@ PopCommand
 
 HelpCommand 
   = "help"
+
+BackgroundCmd
+  = "bg" _ color:Color {
+      var height = document.body.clientHeight;
+      var width = document.body.clientWidth;
+      return['rect', {
+        x: 0, 
+        y: 0, 
+        width: width, 
+        height: height,  
+      'style': "fill: " + color + ";stroke-width:0"}
+      ];
+    }
 
 LoopCommand
   = "loop(" from:Integer ".." to:Integer "," inc:Integer ")" {
